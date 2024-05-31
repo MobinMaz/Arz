@@ -7,10 +7,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="./output.css">
 	<!--date peaker link-->
-	<link rel="stylesheet" href="css/persian.datepicker.css" />
-	<script src="js/jquery.js"></script>
-	<script src="js/persian.date.js"></script>
-	<script src="js/persian.datepicker.js"></script>
+	<link rel="stylesheet"
+		href="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-datepicker/dist/css/persian-datepicker.css" />
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-date/dist/persian-date.js"></script>
+	<script
+		src="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-datepicker/dist/js/persian-datepicker.js"></script>
 </head>
 
 <body>
@@ -23,6 +25,7 @@
 	</div>
 
 
+
 	<!--test-->
 
 	<div class="max-w-3xl  mx-auto my-10">
@@ -31,12 +34,12 @@
 
 			<div class="flex items-center justify-between p-4 ">
 
-				<label for="table-search" class="sr-only" dir="rtl">Search</label>
-				<div class="flex items-center gap-8 w-full  justify-between  mt-1">
-					<div class="relative w-full flex justify-around items-center">
+
+				<div class="flex flex-col md:flex-row items-center gap-8 w-full  justify-between  mt-1">
+					<div class="relative w-full flex justify-around items-center ml-16 md:ml-2 ">
 						<div class="relative w-full">
 							<select id="countries"
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-4 w-[90%] md:w-[50%] font-bold child:font-bold child:px-2 child:my-1 child-hover:cursor-pointer px-4"
+								class="bg-gray-50 border border-gray-300  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-4 w-[90%] md:w-[50%] font-bold child:font-bold child:px-2 child:my-1 child-hover:cursor-pointer px-4"
 								dir="rtl">
 								<option selected>دلار</option>
 								<option value="US">تست</option>
@@ -46,29 +49,22 @@
 							</select>
 						</div>
 					</div>
-					<div class="md:flex items-center gap-1 justify-between hidden " dir="rtl">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							stroke="currentColor" class="size-6">
-							<path stroke-linecap="round" stroke-linejoin="round"
-								d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-						</svg>
-						<!--jaii ke bayad zaman update valu ha ro neshon bedi-->
-						<span class="text-nowrap font-bold text-gray-500">سه شنبه 08 خرداد 1403</span>
-					</div>
+
+					<input
+						class="initial-value-example border-none text-sm font-bold text-gray-400 focus:outline-none bginput focus:text-transparent w-[170px] h-10 pr-10 cursor-pointer focus:cursor-pointer"
+						spellcheck="false"
+						style="background-image: url(../assest/img/calender.webp) ;background-repeat: no-repeat; background-size: 30px 30px; background-position: 100% 0%;"
+						dir="rtl" />
 
 
 				</div>
 			</div>
 			<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 " dir="rtl ">
 				<thead
-					class="text-xs text-gray-700 uppercase bg-gray-50 child-hover:text-gray-400 child-hover:cursor-pointer">
-					<tr class="border-b border-gray-400 child:text-xl child:md:text-2xl">
-						<th scope="col" class="p-4">
+					class="text-xs text-gray-700 uppercase bg-gray-50 child-hover:text-gray-400 child-hover:cursor-pointer child:text-center">
+					<tr class="border-b border-gray-400 child:text-xl child:md:text-2xl ">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
-
-						</th>
+						
 						<th scope="col" class="px-8 py-3">
 							فروش
 						</th>
@@ -78,20 +74,14 @@
 						<th scope="col" class="px-6 py-3">
 							نوع ارز
 						</th>
-						<th scope="col" class="px-6 py-3">
-							<span class="sr-only">Edit</span>
-						</th>
+
 					</tr>
 					<!--az inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<!--az inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<!--az inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<tr class="text-sm md:text-xl">
-						<th scope="col" class="p-4">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
-
-						</th>
+				
 						<th scope="col" class="px-6 py-3">
 							42,210
 						</th>
@@ -101,20 +91,14 @@
 						<th scope="col" class="pr-0 py-3">
 							دلار استرالیا
 						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 					</tr>
 					<!-- payan inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<!-- payan inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<!-- payan inja bayad data ha va ghimat haro vared koni va render begiri-->
 					<tr class="text-sm md:text-xl">
-						<th scope="col" class="p-4">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 						<th scope="col" class="px-6 py-3">
 							42,210
 						</th>
@@ -124,17 +108,11 @@
 						<th scope="col" class="px-2  py-3">
 							دلار کانادا
 						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 					</tr>
 					<tr class="text-sm md:text-xl">
-						<th scope="col" class="p-4">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 						<th scope="col" class="px-6 py-3">
 							42,210
 						</th>
@@ -144,17 +122,10 @@
 						<th scope="col" class="px-2 py-3">
 							دلار امریکا
 						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 					</tr>
 					<tr class="text-sm md:text-xl">
-						<th scope="col" class="p-4">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
-
-						</th>
 						<th scope="col" class="px-6 py-3">
 							42,210
 						</th>
@@ -164,17 +135,11 @@
 						<th scope="col" class="px-2 py-3">
 							دلار امریکا
 						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 					</tr>
 					<tr class="text-sm md:text-xl">
-						<th scope="col" class="p-4">
 
-						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 						<th scope="col" class="px-6 py-3">
 							42,210
 						</th>
@@ -184,9 +149,7 @@
 						<th scope="col" class="px-2 py-3">
 							دلار امریکا
 						</th>
-						<th scope="col" class="px-6 py-3">
 
-						</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -196,9 +159,22 @@
 			</table>
 		</div>
 
-		<input class="formatter-example" placeholder="kfdja"/>
+
 		<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".example1").pDatepicker();
+			$('.initial-value-example').persianDatepicker({
+				initialValue: false,
+
+
+			});
+		});
+
+
+	</script>
+
 
 
 
@@ -206,3 +182,23 @@
 
 
 </html>
+<!--
+	<html>
+    <head>
+    <link rel="stylesheet" href="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-datepicker/dist/css/persian-datepicker.css"/>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-date/dist/persian-date.js"></script>
+      <script src="http://babakhani.github.io/PersianWebToolkit/beta/lib/persian-datepicker/dist/js/persian-datepicker.js"></script>
+    </head>
+    <body>
+ 
+        <script type="text/javascript">
+          $(document).ready(function() {
+          $(".example1").pDatepicker();
+          });
+        </script>
+ 
+        <input type="text" class="example1" />
+    </body>
+</html>
+-->
